@@ -1,0 +1,62 @@
+/*-----CSS RESPONSIVO-----*/
+/* Estilos para dispositivos pequeños (smartphones) */
+@media screen and (max-width: 375px) {
+  .swiper-slide .text-content {
+    top: 10%;
+    margin: 0 20px 0 20px;
+  }
+  .swiper-slide .text-content h2 {
+    font-size: 3em;
+  }
+  .swiper-slide .text-content p {
+    font-size: 0.9em;
+  }
+  .bg-slider-thumbs {
+    bottom: -15%;
+  }
+  .contact input {
+    width: 90%;
+  }
+  .form-box .form-details{
+    display: none;
+  }
+  .text-policies{
+    padding: 20px 2% 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .swiper-slide .text-content {
+    top: 10%;
+    margin: 0 20px 0 20px;
+  }
+  .swiper-slide .text-content h2 {
+    font-size: 3em;
+  }
+  .swiper-slide .text-content p {
+    font-size: 0.9em;
+  }
+  .bg-slider-thumbs {
+    bottom: -15%;
+  }
+  .contact input {
+    width: 100%;
+  }
+  .form-box .form-details{
+    display: none;
+  }
+  .text-policies{
+    padding: 20px 2% 5%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .navmenu {
+    display: grid;
+  }
+  .contact input {
+    width: 100%;
+  }
+  .form-box .form-details{
+    display: none;
+  }
+}
+

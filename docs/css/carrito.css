@@ -1,0 +1,161 @@
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenedor */
+  align-items: flex-start; /* Alinea el contenedor al inicio verticalmente */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.contenedor h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos dentro de .carrito en columna */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  width: 60%; /* Ancho inicial al 80*/
+}
+.carrito .carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye espacio entre elementos */
+  position: relative;
+  border-bottom: 1px solid #9c9c9c;
+  padding: 20px;
+  width: 100%; /* Asegura que los elementos ocupen todo el ancho del contenedor */
+}
+
+.carrito .carrito-item img {
+  margin-right: 20px;
+}
+
+.carrito .carrito-item .carrito-item-titulo {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.carrito .carrito-item .selector-cantidad {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.carrito .carrito-item .carrito-item-cantidad {
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  display: inline-block;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+.carrito .carrito-item .selector-cantidad i {
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.carrito .carrito-item .carrito-item-precio {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.carrito-item-precio{
+    padding-right: 20px;
+}
+.carrito .carrito-item .btn-eliminar {
+  color: #000;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  background: transparent;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto; /* Asegura que el botón no se redimensione */
+}
+.carrito .carrito-item .btn-eliminar i {
+  pointer-events: none;
+}
+
+.carrito-total {
+  padding: 30px;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 100%;
+}
+
+.carrito-total .fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%; /* Asegura que los elementos ocupen todo el ancho del contenedor */
+}
+
+.carrito-total .btn-pagar {
+  width: 100%;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 40%;
+}
+
+.carrito-total .btn-pagar:hover {
+  scale: 1.05;
+}
+
+/* Media queries para un diseño responsivo */
+@media (max-width: 1200px) {
+  .carrito {
+    width: 90%; /* Ajusta el ancho al 90% en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .carrito {
+    width: 95%; /* Ajusta el ancho al 95% en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .carrito {
+    width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
+  }
+
+  .carrito .carrito-item {
+    flex-direction: column; /* Cambia la dirección de los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .carrito .carrito-item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
