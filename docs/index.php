@@ -20,6 +20,7 @@ $resul = $sql->fetchAll(PDO::FETCH_ASSOC);
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cookies.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--Fuentes de letra-->
@@ -223,16 +224,25 @@ $resul = $sql->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </section>
-
+    <div class="aviso-cookies" id="aviso-cookies">
+		<img class="cookie-img" src="images/cookies.png" alt="cookie">
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Este sitio web utiliza cookies para mejorar la experiencia del usuario.</p>
+		<button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+		<button class="boton" id="btn-rechazar-cookies">Rechazar</button>
+		<a class="enlace">Aviso de Cookies</a>
+	</div>
     <!--TEXTO FINAL-->
     <div class="end-text">
         <p>Copyright © @2024 Todos los derechos reservados</p>
     </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/cookies.js"></script>
     <script>
         function addProducto(id, token) {
             let url = 'clases/cart.php'
